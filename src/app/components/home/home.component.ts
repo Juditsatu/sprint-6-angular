@@ -1,15 +1,18 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { EscenaComponent } from '../escena/escena.component';
+import { Story } from '../../interface/story.interface';
+import storyJson from '../../../assets/story.json';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
-  @Input() escena!: EscenaComponent;
+  @Input() public stories: Story[] = storyJson;
   
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
