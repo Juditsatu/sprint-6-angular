@@ -1,5 +1,5 @@
 <div class="container">
     <button (click)="prev()">Anterior</button>
     <button (click)="next()">Següent</button>
-    <p *ngFor="let story of stories; let i = index" [ngStyle]="{backgroundColor:getColor(i)}" class="text">{{story.txt}}</p>
+    <p *ngFor="let story of stories; let i = index" [ngStyle]="{backgroundColor: currentSentence == i ? 'rgba(255,0,0,0.3)' : 'rgba(255,255,255,0.3)'}" class="text">{{story.txt}}</p>
 </div>

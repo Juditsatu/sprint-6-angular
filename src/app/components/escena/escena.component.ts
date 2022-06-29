@@ -32,17 +32,6 @@ export class EscenaComponent implements OnInit {
       console.log("next2", this.stories[this.currentSentence]);
     }
   }
-  
-  public getColor(index: number) : string {
-    console.log("i", index)
-    switch(index) {
-      case 0: return '#fff'
-      case 1: return '#000'
-      case 2: return '#000'
-      case 3: return '#000'
-      default: return 'red'
-    }
-  }
 
   constructor() { 
     
