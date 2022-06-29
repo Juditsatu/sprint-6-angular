@@ -16,23 +16,19 @@ export class EscenaComponent implements OnInit {
   public prev() {
     if (this.currentSentence == 0) {
       this.currentSentence = this.stories.length - 1;
-      console.log("prev", this.stories[this.currentSentence])
     } else {
       this.currentSentence--;
-      console.log("prev2", this.stories[this.currentSentence])
     }
   }
   
   public next() {
     if (this.currentSentence == this.stories.length - 1) {
       this.currentSentence = 0;
-      console.log("next", this.stories[this.currentSentence]);
     } else {
       this.currentSentence++
-      console.log("next2", this.stories[this.currentSentence]);
     }
   }
-
+  
   constructor() { 
     
   }

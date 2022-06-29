@@ -11,6 +11,12 @@ import storyJson from '../../../assets/story.json';
 export class HomeComponent implements OnInit {
   @Input() public stories: Story[] = storyJson;
   
+  show: boolean = false;
+
+  public showStory() {
+    this.show = !this.show;
+  }
+
   constructor() { 
   }
 

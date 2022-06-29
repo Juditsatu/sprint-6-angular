@@ -1,0 +1,30 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.text {
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 30px;
+    margin: 3rem;
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30%;
+    padding: 1rem;
+}
+
+/* .return-button {
+    width: 20%;
+    padding: .5rem;
+} */

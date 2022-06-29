@@ -1,1 +1,13 @@
-<app-escena [stories]="stories" ></app-escena>
+<div class="container" *ngIf="!show">
+    <h1>BENVINGUT!</h1>
+    <h2>Judit Santos - Sprint-6</h2>
+    <p class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae eveniet iure reprehenderit voluptates inventore aperiam labore, aut deserunt porro mollitia est commodi quos nesciunt vitae molestias, amet explicabo sit similique.
+    </p>
+    <button (click)="showStory()">Comença</button>
+</div>
+
+<div class="container" *ngIf="show">
+    <app-escena  [stories]="stories" ></app-escena>
+    <!-- <button class="return-button" (click)="showStory()">Torna</button> -->
+</div>
