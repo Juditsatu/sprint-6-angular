@@ -1,5 +1,11 @@
-<div class="container">
-    <button (click)="prev()">Anterior</button>
-    <button (click)="next()">Següent</button>
-    <p *ngFor="let story of stories; let i = index" [ngStyle]="{backgroundColor: currentSentence == i ? 'rgba(255,0,0,0.3)' : 'rgba(255,255,255,0.3)'}" class="text">{{story.txt}}</p>
+<div class="background-img" [ngStyle]="{backgroundImage:'url(../../../assets/1.jpg)'}">
+    <div class="container" >
+        <button (click)="prev()">Anterior</button>
+        <button (click)="next()">Següent</button>
+        <p *ngFor="let story of stories; let i = index"
+            [ngStyle]="{backgroundColor: currentSentence == i ? 'rgb(240,128,128)' : 'rgba(255,255,255,0.6)'}"
+            class="text">
+            {{story.txt}}
+        </p>
+    </div>
 </div>
