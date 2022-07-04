@@ -1,14 +1,12 @@
-<!-- <div class="bg-image" 
-style="background-image: url('stories[currentSentence].img');
+<div class="bg-image" 
+style="background-image: url({{stories[currentSentence].img}});
        background-repeat: no-repeat;
-       background-size: cover;"> -->
-<div class="bg-image">
-    <img [src]="stories[currentSentence].img" class="bg-image">
+       background-size: cover;">
     <div class="row">
         <div class="col-12 mx-auto">
             <div class="btn-group w-100 py-4">
-                <button ton class="btn-lg btn btn-outline-secondary fw-bold p-4" (click)="prev()">Anterior</button>
-                <button class="btn-lg btn btn-outline-secondary fw-bold p-4" (click)="next()">Següent</button>
+                <button ton class="btn-lg btn btn-outline-light fw-bold p-4" (click)="prev()">Anterior</button>
+                <button class="btn-lg btn btn-outline-light fw-bold p-4" (click)="next()">Següent</button>
             </div>
             <p *ngFor="let story of stories; let i = index"
                 [ngStyle]="{backgroundColor: currentSentence == i ? 'rgb(240,128,128)' : 'rgba(255,255,255,0.6)'}"
